@@ -69,6 +69,10 @@ header .user .name{
     font-size: 3.5rem;
     color:#fff;
 }
+header .user .name, #social-test li{
+    display: flex;
+    flex-direction: row;
+}
 
 header .user .post{
     font-size: 2rem;
@@ -108,6 +112,47 @@ header .navbar ul li a:hover{
     z-index: 1000;
     display: none;
 }
+.center {
+    display: table;
+    width: 100%;
+  }
+  
+  #social-test {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+    #social-test .social {
+      padding-left: 5px;
+    }
+    #social-test li {
+      color: var(--blue);
+      list-style-type: none;
+      text-decoration-style: none;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      padding: 1%;
+      border: 1px solid var(--blue);
+      cursor: pointer;
+      margin-left: 1px;
+      margin-bottom: 1px;
+      transition: ease .3s;
+    }
+
+  .social:hover > li {
+    opacity: 0.5;
+  }
+  
+  .social:hover > li:hover {
+    opacity: 1;
+  }
+  /* h3 .social{
+     
+  } */
+
 .heading{
     text-align: center;
     margin:0 6rem;

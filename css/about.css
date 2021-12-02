@@ -103,24 +103,25 @@ header .navbar ul li a:hover{
 
 
 section{
-    min-height: 100vh;
-    padding:1%;
+    padding: 2%;
 }
 
-.about .row{
+/* .about .row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding:1rem 0;
-}
+} */
 .about .row p{
+    margin-left: 3%;
     font-size:25px;
     color:#eee;
     padding: 5px;
+    width: calc(95% - 60px);
 }
 
-.about .row .info{
+/* .about .row .info{
     flex:1 1 48rem;
     padding: 24px 12px;
     padding-left: 6rem;
@@ -170,7 +171,7 @@ section{
     margin-top: 12px;
     font-size: 2rem;
     border-radius: 5rem;
-}
+} */
 
 .btn i{
     padding: 0 .5rem;
@@ -189,7 +190,75 @@ section{
     border-bottom: .1rem solid #fff4;
     color:#fff;
 }
-
+/* .skills .skills-content .column{ 
+    
+} */
+.skills .skills-content .left .text{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--blue);
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: var(--blue);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 4px 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 2px solid var(--blue);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: var(--blue);
+    background: none;
+}
+.skills .skills-content .right .bars .info{
+   padding: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.skills .skills-content .right span{
+    font-weight: 400;
+    font-size: 25px;
+    padding: 0;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--blue);
+}
+.skills-content .right .html::before{
+    width: 80%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 30%;
+}
+.skills-content .right .c::before{
+    width: 40%;
+}
 
 
 .heading span{
